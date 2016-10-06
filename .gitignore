@@ -26,3 +26,8 @@
 *.exe
 *.out
 *.app
+
+[Cc]ore
+[Ll]ibraries
+[Rr]elease
+.*
