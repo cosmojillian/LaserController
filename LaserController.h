@@ -11,6 +11,7 @@
 class Gcode;
 class CodeBuffer;
 class Platform;
+class Stepper;
 
 #include "Arduino.h"
 #include <SPI.h>
@@ -19,5 +20,6 @@ class Platform;
 #include "Configuration.h"
 #include "Gcode.h"
 #include "Platform.h"
+#include "Stepper.h"
 
 #endif /* LASERCONTROLLER_H_ */

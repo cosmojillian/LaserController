@@ -36,6 +36,11 @@
 #include "LaserController.h"
 #include "CodeBuffer.h"
 
+enum GcodeState {
+	Executing,
+	Idle
+};
+
 class Gcode {
 public:
 	Gcode(Platform *_platform);
@@ -45,6 +50,10 @@ public:
 private:
 	CodeBuffer *serialBuffer;
 	Platform *platform;
+	elapsedMillis waitTimer;
+
+	uint waitTime;
+	GcodeState state;
 };
 
 #endif /* GCODE_H_ */
