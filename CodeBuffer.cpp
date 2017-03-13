@@ -2,7 +2,7 @@
  * CodeBuffer.cpp
  *
  *  Created on: Sep 28, 2016
- *      Author: cosmo
+ *      Author: Caroline
  */
 
 #include "CodeBuffer.h"
@@ -17,7 +17,7 @@ CodeBuffer::CodeBuffer() {
 }
 
 long CodeBuffer::GetLongValue() {
-	if(linePointer < 0) {
+	if (linePointer < 0) {
 		linePointer = -1;
 		return 0;
 	}
@@ -28,12 +28,13 @@ long CodeBuffer::GetLongValue() {
 }
 
 float CodeBuffer::GetFloatValue() {
-	if(linePointer < 0) {
+	if (linePointer < 0) {
 		linePointer = -1;
 		return 0;
 	}
 
-	float result = (float)strtod(&codeBuffer[readPointer][linePointer + 1], NULL);
+	float result = (float) strtod(&codeBuffer[readPointer][linePointer + 1],
+			NULL);
 	linePointer = -1;
 	return result;
 }
@@ -44,7 +45,8 @@ bool CodeBuffer::Seen(char c) {
 
 	do {
 		b = codeBuffer[readPointer][linePointer];
-		if (b == c) return true;
+		if (b == c)
+			return true;
 		linePointer++;
 	} while (b != 0 && b != ';');
 
@@ -82,7 +84,7 @@ void CodeBuffer::FillCodeBuffer() {
 			QueueCommand(newCommand);
 		} else if (commandIndex >= MAX_COMMAND_LENGTH) {
 			//ignore characters past, maybe send an error code?
-		} else {							//Add everything else to the new command
+		} else {						//Add everything else to the new command
 			if (c == ';')
 				inComment = true;
 			if (!inComment)

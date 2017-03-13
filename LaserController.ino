@@ -21,8 +21,8 @@
  * M110-Set Current Line Number
  * M111-Enable debug (S-on/off)
  * M112-Emergency stop
- * M114-Get current position
- * M115-Get version
+ * # M114-Get current position
+ * # M115-Get version
  * # M119-Get endstop status
  * M206-Offset axes (X Y Z)
  *

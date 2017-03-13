@@ -2,7 +2,7 @@
  * Gcode.cpp
  *
  *  Created on: Sep 28, 2016
- *      Author: cosmo
+ *      Author: Caroline
  */
 
 #include "Gcode.h"

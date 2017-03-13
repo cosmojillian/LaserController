@@ -2,7 +2,7 @@
  * Platform.h
  *
  *  Created on: Sep 29, 2016
- *      Author: cosmo
+ *      Author: Caroline
  */
 
 #ifndef PLATFORM_H_

@@ -2,7 +2,7 @@
  * LaserController.h
  *
  *  Created on: Sep 28, 2016
- *      Author: cosmo
+ *      Author: Caroline
  */
 
 #ifndef LASERCONTROLLER_H_

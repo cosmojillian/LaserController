@@ -2,7 +2,7 @@
  * Platform.cpp
  *
  *  Created on: Sep 29, 2016
- *      Author: cosmo
+ *      Author: Caroline
  */
 
 #include "Platform.h"
@@ -46,10 +46,12 @@ void Platform::Update() {
 		}
 	} else if (state == Moving) {
 		if (CheckEndstop(0, true)) {
+			SetPositionX(0);
 			//TODO Should we be at home? if not then do an error thing
 		}
 
 		if (CheckEndstop(1, true)) {
+			SetPositionY(0);
 			//TODO Should we be at home? if not then do an error thing
 		}
 

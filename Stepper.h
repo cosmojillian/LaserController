@@ -2,7 +2,7 @@
  * Stepper.h
  *
  *  Created on: Oct 6, 2016
- *      Author: cosmo
+ *      Author: Caroline
  */
 
 #ifndef STEPPER_H_

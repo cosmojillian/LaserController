@@ -2,7 +2,7 @@
  * CodeBuffer.h
  *
  *  Created on: Sep 28, 2016
- *      Author: cosmo
+ *      Author: Caroline
  */
 
 #ifndef CODEBUFFER_H_
@@ -19,7 +19,7 @@ public:
 	float GetFloatValue();			//Returns the float value following linePointer in the code buffer
 	long GetLongValue();			//Returns the long value following linePointer in the code buffer
 	int GetIntValue();				//Returns the int value following linePointer in the code buffer
-	//const char* Buffer() const;		//
+	//const char* Buffer() const;	//
 	void FillCodeBuffer();
 	char* CurrentCode();
 	bool QueueCommand(const char* command);
